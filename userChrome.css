@@ -1,0 +1,39 @@
+#TabsToolbar {
+  display: none;
+}
+
+#sidebar-header {
+  display: none;
+}
+
+#sidebar-box {
+  min-width: 100px !important;
+  width: 100px !important;
+  padding-top: 0 !important;
+  transition: 100ms;
+  transition-delay: 0ms;
+  z-index: 10;
+}
+
+#appcontent {
+  transition: 100ms;
+  transition-delay: 0ms;
+}
+
+#sidebar-splitter {
+  z-index: 10;
+}
+
+#sidebar-box:hover {
+  min-width: 280px !important;
+  width: 280px !important;
+  transition: 100ms linear;
+  transition-delay: 500ms;
+}
+
+#sidebar-box:hover ~ #appcontent {
+  transition: 100ms linear;
+  transition-delay: 500ms;
+  margin-left: -180px !important;
+}
+
