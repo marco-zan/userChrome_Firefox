@@ -15,13 +15,14 @@
   z-index: 10;
 }
 
-#appcontent {
+#tabbrowser-tabbox {
   transition: 100ms;
   transition-delay: 0ms;
 }
 
 #sidebar-splitter {
   z-index: 10;
+  max-width: 3px !important;
 }
 
 #sidebar-box:hover {
@@ -31,7 +32,7 @@
   transition-delay: 500ms;
 }
 
-#sidebar-box:hover ~ #appcontent {
+#sidebar-box:hover ~ #tabbrowser-tabbox {
   transition: 100ms linear;
   transition-delay: 500ms;
   margin-left: -180px !important;
